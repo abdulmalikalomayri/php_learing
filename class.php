@@ -4,9 +4,13 @@
 class User {
 
     /**
+     * Access Modifiers
      * Public = access from everywhere, Default 
      * protected = access from class or inheritaned class 
      * private = access from only parent class 
+     * ***************************************
+     * 
+     * 
      */
     // Attribute type 
     protected $username;
@@ -35,7 +39,7 @@ class User {
         }
     }
 
-    // Method Override
+    // Method Override same func name different action 
     public function hello() 
     {
         echo "Hello there";
