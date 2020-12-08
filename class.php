@@ -1,5 +1,6 @@
 <?php
 
+// include_once("final.php");
 // User
 class User {
 
@@ -17,6 +18,8 @@ class User {
     private $password;
 
     public $level;
+
+    public static $value = "static";
 
     // Constructor
     function __construct($username, $password) {
@@ -45,9 +48,17 @@ class User {
         echo "Hello there";
     }
 
-    final public function welcome()
+    // final method 
+    final public function over()
     {
         echo "final method: can't override";
+    }
+
+    // Static method can call without declaring an object
+    public static function state()
+    {
+
+        echo self::$value;
     }
 
 }

@@ -7,13 +7,7 @@
  */
 abstract class Shape {
 
-
     public $num;
-    
-    public function __construct()
-    {
-        echo "Abstract Working";
-    }
 
     /**
      * Abstract Method can only defined but cannot write code in parent class 
