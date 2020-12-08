@@ -12,7 +12,7 @@ interface InterfaceName {
     
 
     // Interface method can't containt code inside methods 
-    public function attack();
+    public function attack($user);
     public function hurt();
     public function jump();
     public function heal();

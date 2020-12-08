@@ -8,8 +8,11 @@ include("inheritance/inheritance.php");
 
 include_once("abstract/square.php");
 
-/********** Class ***********/
+include_once("interface/interface.php");
+include_once("interface/child.php");
 
+/********** Class ***********/
+/* 
 $u1 = new User("Mlouk","1234");
 
 echo $u1->__get("username");
@@ -32,7 +35,7 @@ User::$value = "Static Attribute";
 
 // Static Method
 User::state();
-
+ */
 /************ Inheritance **********/
 /* 
 echo "<br>";
@@ -57,6 +60,9 @@ echo "<br>";
 // final method 
 
 /********* Abstract ********/
+
+// Error cannot declare an object with abstract class 
+// $shaper = new Shape();
 /* 
 $square = new Square();
 
@@ -64,8 +70,11 @@ echo "<hr>";
 
 $square->makeShape();
 
- */
 
+ */
  /********* Interface *************/
 
+//  Error Interface cannot declare an object
+// $inter = new InterfaceName();
 
+$child = new Child();

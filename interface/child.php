@@ -10,4 +10,28 @@
 
 class Child implements InterfaceName {
 
+    public $name;
+    public $attack;
+    public $health;
+
+    public function attack($user)
+    {
+        return $this->attack - $user;
+    }
+    
+    public function hurt() 
+    {
+
+    }
+
+    public function jump()
+    {
+
+    }
+
+    public function heal()
+    {
+
+    }
+
 }

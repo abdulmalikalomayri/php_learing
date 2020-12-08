@@ -5,6 +5,7 @@ include("abstract.php");
 
 class square extends Shape {
     
+    
 
     // abstract method must declare 
     public function makeShape()

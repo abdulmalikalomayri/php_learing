@@ -19,6 +19,7 @@ class User {
 
     public $level;
 
+    // Static Attribute can use without declare an object
     public static $value = "static";
 
     // Constructor

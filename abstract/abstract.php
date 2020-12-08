@@ -7,7 +7,7 @@
  */
 abstract class Shape {
 
-    public $num;
+    public $name;
 
     /**
      * Abstract Method can only defined but cannot write code in parent class 
