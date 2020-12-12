@@ -12,13 +12,14 @@ include_once("interface/interface.php");
 include_once("interface/child.php");
 
 /********** Class ***********/
-/* 
+
 $u1 = new User("Mlouk","1234");
 
+// getter method 
 echo $u1->__get("username");
 
 echo "<br>";
-
+// setter method
 $u1->__set("username", "Abdulmalik");
 
 echo $u1->__get("username");
@@ -35,10 +36,13 @@ User::$value = "Static Attribute";
 
 // Static Method
 User::state();
- */
+
+
+// OverLoading
+
 /************ Inheritance **********/
-/* 
-echo "<br>";
+
+/* echo "<br>";
 
 // object instaniate Admin that Inheritance from Users
 $admin1 = new Admin("super_admin", "123");
@@ -48,12 +52,12 @@ echo $admin1->__get("username");
 
 echo "<br>";
 
-$admin1->delete();
+$admin1->isWorking();
 
 echo "<br>";
 
 // Overriding 
-$admin1->hello();
+$admin1->overRide();
 
 echo "<br>";
  */

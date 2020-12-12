@@ -5,19 +5,14 @@
 class Admin extends User {
     
 
-    public function create()
+    public function isWorking()
     {
-        echo "New Record Created";
-    }
-
-    public function delete()
-    {
-        echo "Record has been Deleted ". $this->usernamed;
+        echo "Admin class Inheritance from User class ". $this->usernamed;
     }
 
     // Override 
-    public function hello()
+    public function overRide()
     {
-        echo "Override";
+        echo "Override Method is a Method that inherit from parent class but in child class it's different";
     }
 }

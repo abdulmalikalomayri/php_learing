@@ -10,17 +10,19 @@ class User {
      * protected = access from class or inheritaned class 
      * private = access from only parent class 
      * ***************************************
-     * 
+     * Overloading
+     * OverRiding
+     * getter & setter 
+     * Static Attribute: Can called without creating an instance of a class
+     * Static Method: Can called without createing an instance of a class
      * 
      */
     // Attribute type 
     protected $username;
     private $password;
 
-    public $level;
-
     // Static Attribute can use without declare an object
-    public static $value = "static";
+    public static $static_attribute = "static attribute ";
 
     // Constructor
     function __construct($username, $password) {
@@ -44,19 +46,19 @@ class User {
     }
 
     // Method Override same func name different action 
-    public function hello() 
+    public function overRide() 
     {
         echo "Hello there";
     }
 
     // final method 
-    final public function over()
+    final public function finalMethod()
     {
         echo "final method: can't override";
     }
 
     // Static method can call without declaring an object
-    public static function state()
+    public static function staticMethod()
     {
 
         echo self::$value;
