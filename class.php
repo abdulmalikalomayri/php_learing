@@ -22,7 +22,7 @@ class User {
     private $password;
 
     // Static Attribute can use without declare an object
-    public static $static_attribute = "static attribute ";
+    public static $staticAttribute = "Static Attribute ";
 
     // Constructor
     function __construct($username, $password) {
@@ -51,6 +51,7 @@ class User {
         echo "Hello there";
     }
 
+
     // final method 
     final public function finalMethod()
     {
@@ -60,8 +61,19 @@ class User {
     // Static method can call without declaring an object
     public static function staticMethod()
     {
+        /**
+         * $this->value;
+         * self::$value;
+         */
 
-        echo self::$value;
+        self::$staticAttribute = "Static Method";
+        
+        echo self::$staticAttribute;
+    }
+
+    public function test(){
+
+        self::staticMethod();
     }
 
 }

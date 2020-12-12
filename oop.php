@@ -7,12 +7,13 @@ include("final.php");
 include("inheritance/inheritance.php");
 
 include_once("abstract/square.php");
+include_once("abstract/triangle.php");
 
 include_once("interface/interface.php");
 include_once("interface/child.php");
 
 /********** Class ***********/
-
+/* 
 $u1 = new User("Mlouk","1234");
 
 // getter method 
@@ -26,16 +27,19 @@ echo $u1->__get("username");
 
 echo "<br>";
 
-// overriding
-$u1->over();
+
+
+
+// Static Attribute
+echo User::$staticAttribute;
+
+echo "<br>";
+// Static Method
+User::staticMethod();
 
 echo "<br>";
 
-// Static Attribute
-User::$value = "Static Attribute";
-
-// Static Method
-User::state();
+$u1->test(); */
 
 
 // OverLoading
@@ -67,18 +71,26 @@ echo "<br>";
 
 // Error cannot declare an object with abstract class 
 // $shaper = new Shape();
-/* 
-$square = new Square();
+
+$square = new Square("square", 360);
 
 echo "<hr>";
 
+$square->info();
+
+echo "<br>";
+echo "<br>";
+
 $square->makeShape();
 
+$triangle = new Triangle("Triangle", 270);
 
- */
+$triangle->info(); 
+
  /********* Interface *************/
 
 //  Error Interface cannot declare an object
 // $inter = new InterfaceName();
 
-$child = new Child();
+// $child = new Child();
+
